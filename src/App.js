@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import WordOfTheDay from './WordofTheDay';
+import SentenceExamples from './sentenseExamples';
 
-function App() {
+// Import other components as needed
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <h1>One Word a Day</h1>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Word of the Day</Link>
+            </li>
+            <li>
+              <Link to="/sentence-examples">Sentence Examples</Link>
+            </li>
+            {/* Add other navigation links here */}
+          </ul>
+        </nav>
+        <Routes>
+          <Route path="/" element={<WordOfTheDay />} />
+          <Route path="/sentence-examples" element={<SentenceExamples />} />
+         
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
+

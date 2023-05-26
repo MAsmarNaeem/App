@@ -1,0 +1,36 @@
+.sentence-examples {
+    margin-top: 20px;
+  }
+  
+  .sentence-examples h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .sentence-examples form {
+    margin-bottom: 20px;
+  }
+  
+  .sentence-examples input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .sentence-examples button[type="submit"] {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .sentence-examples ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sentence-examples li {
+    margin-bottom: 10px;
+  }
+  
